@@ -1,0 +1,68 @@
+1)declare
+sal number;
+begin
+sal:=:Enter Salary;
+dbms_output.put_line(sal);
+hra=(sal*10)/100;
+dbms_output.put_line(hra);
+da=(sal*60)/100;
+dbms_output.put_line(da);
+net_sal=sal+hra+da;
+dbms_output.put_line(net_sal);
+count(emp_no)from emp;
+end;
+_____________________________________
+2)declare
+emp_no varchar2;
+begin
+Salary:='&sal';
+emp_no:=:Enter Emp_no;
+dbms_output.put_line(emp_no);
+select*from emp;
+if sal>10000 then
+dbms_output.put_line("Less Salary");
+elsif sal>10000 OR sal<30000
+dbms_output.put_line("Medium Salary");
+elsif sal>30000 OR sal<60000
+dbms_output.put_line("High Salary");
+elsif sal>6000
+dbms_output.put_line("very high Salary");
+else
+dbms_output.put_line("Excellent Salary");
+end if;
+end;
+____________________________________
+4)declare
+no number;
+len number;
+begin
+no:=:Enter_no;
+len:=length(no);
+for no in reverse 0..len loop
+dbms_output.put_line(no);
+end loop;
+end;     
+
+
+
+second way
+
+declare
+  no number;
+  rev number; 
+begin
+  rev:=0; 
+  no:=:Enter_number;
+  while no>0 loop  
+    rev:=(rev*10) + mod(no,10); 
+    no:=floor(no/10); 
+  end loop; 
+  dbms_output.put_line("Reverse of the number is: " || rev); 
+end; 
+
+
+
+
+
+
+
