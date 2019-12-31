@@ -1,0 +1,35 @@
+1)CREATE PROCEDURE fact(n in INT)
+DECLARE
+f number(5);
+i number(5);
+BEGIN
+SET f = 1;
+SET i = 1;
+WHILE i <= x DO
+SET f = f * i;
+SET i = i + 1;
+END WHILE;
+SELECT n AS Number, f as Factorial;
+END;
+/
+
+3)
+declare
+a number;
+b number;
+c number;
+begin
+a:= :a;
+b:= :b;
+c:= :c;
+if a>b AND a>c then
+dbms_output.put_line('Large number is '||a);
+elsif b>a AND b>c then
+dbms_output.put_line('Large number is '||b);
+else
+dbms_output.put_line('Large number is '||c);
+end if;
+end;
+
+4)
+
