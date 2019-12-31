@@ -1,0 +1,61 @@
+1)CREATE PROCEDURE fact(n in INT)
+DECLARE
+f number(5);
+i number(5);
+BEGIN
+SET f = 1;
+SET i = 1;
+WHILE i <= x DO
+SET f = f * i;
+SET i = i + 1;
+END WHILE;
+SELECT n AS Number, f as Factorial;
+END;
+/
+
+3)
+declare
+a number;
+b number;
+c number;
+begin
+a:= :a;
+b:= :b;
+c:= :c;
+if a>b AND a>c then
+dbms_output.put_line('Large number is '||a);
+elsif b>a AND b>c then
+dbms_output.put_line('Large number is '||b);
+else
+dbms_output.put_line('Large number is '||c);
+end if;
+end;
+5)
+declare
+rno number(3),
+sub1 number(2),
+sub2 number(2),
+sub3 number(2)
+procedure result(tot out number,perc out number)
+begin
+rno:=:rno;
+sub1:=:sub1;
+sub2:=:sub2;
+sub3:=:sub3;
+tot=sub1+sub2+sub3;
+perc=totel/300*100;
+if perc>=75 then
+dbms_output.put_line("Distiction");
+elsif perc>=60 AND perc<75 then
+dbms_output.put_line("First class");
+elsif perc>=50 And perc<60 then
+dbms_output.put_line("Second class");
+elsif perc>=35 AND perc<50 then
+dbms_output.put_line("Pass class");
+elsif perc<35 then
+dbms_output.put_line("Fail");
+else
+dbms_output.put_line("invalid percentage");
+end if;
+end;
+/
