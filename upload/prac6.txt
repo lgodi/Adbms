@@ -1,0 +1,21 @@
+1.CREATE OR REPLACE PACKAGE emp_data AS
+FUNCTION get_empinfo(emp_no varchar) return varchar2;
+FUNCTION emp_totsal(emp_no varchar) return varchar2;
+END emp_data;
+
+CREATE OR REPLACE PACKAGE BODY emp_data AS
+
+FUNCTION get_empinfo(emp_no varchar2) return varchar2 IS
+emp_id varchar2(10);
+BEGIN 
+SELECT SALARY INTO emp_id FROM EMP WHERE emp_id=emp_no;
+END get_empinfo;
+
+FUNCTION emp_totsal(EMP_NO VARCHAR2) RETURN VARCHAR2 IS
+sal number(10);
+BEGIN
+SELECT SALARY INTO sal FROM EMP WHERE sal=salary;
+END emp_totsal;
+
+END emp_data;
+
