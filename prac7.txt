@@ -1,0 +1,284 @@
+
+D:\Softwareinstallation\mongodb\bin>mongod.exe --dbpath "D:\Softwareinstallation\mongodb\data"
+2020-02-03T21:01:27.991-0700 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2020-02-03T21:01:28.010-0700 I  CONTROL  [initandlisten] MongoDB starting : pid=5996 port=27017 dbpath=D:\Softwareinstallation\mongodb\data 64-bit host=DESKTOP-49SN52U
+2020-02-03T21:01:28.010-0700 I  CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2020-02-03T21:01:28.010-0700 I  CONTROL  [initandlisten] db version v4.2.1
+2020-02-03T21:01:28.010-0700 I  CONTROL  [initandlisten] git version: edf6d45851c0b9ee15548f0f847df141764a317e
+2020-02-03T21:01:28.011-0700 I  CONTROL  [initandlisten] allocator: tcmalloc
+2020-02-03T21:01:28.011-0700 I  CONTROL  [initandlisten] modules: enterprise
+2020-02-03T21:01:28.012-0700 I  CONTROL  [initandlisten] build environment:
+2020-02-03T21:01:28.012-0700 I  CONTROL  [initandlisten]     distmod: windows-64
+2020-02-03T21:01:28.013-0700 I  CONTROL  [initandlisten]     distarch: x86_64
+2020-02-03T21:01:28.013-0700 I  CONTROL  [initandlisten]     target_arch: x86_64
+2020-02-03T21:01:28.014-0700 I  CONTROL  [initandlisten] options: { storage: { dbPath: "D:\Softwareinstallation\mongodb\data" } }
+2020-02-03T21:01:28.018-0700 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3540M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2020-02-03T21:01:28.235-0700 I  STORAGE  [initandlisten] WiredTiger message [1580788888:234623][5996:140706285108304], txn-recover: Set global recovery timestamp: (0,0)
+2020-02-03T21:01:28.319-0700 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2020-02-03T21:01:28.418-0700 I  STORAGE  [initandlisten] Timestamp monitor starting
+2020-02-03T21:01:28.492-0700 I  CONTROL  [initandlisten]
+2020-02-03T21:01:28.493-0700 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-03T21:01:28.496-0700 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-03T21:01:28.500-0700 I  CONTROL  [initandlisten]
+2020-02-03T21:01:28.501-0700 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-02-03T21:01:28.502-0700 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2020-02-03T21:01:28.504-0700 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2020-02-03T21:01:28.512-0700 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-02-03T21:01:28.513-0700 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-02-03T21:01:28.514-0700 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-02-03T21:01:28.516-0700 I  CONTROL  [initandlisten]
+2020-02-03T21:01:28.520-0700 I  STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 82a9f36c-aea1-4721-985f-19f0acd53e0f and options: { uuid: UUID("82a9f36c-aea1-4721-985f-19f0acd53e0f") }
+2020-02-03T21:01:28.610-0700 I  INDEX    [initandlisten] index build: done building index _id_ on ns admin.system.version
+2020-02-03T21:01:28.614-0700 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2020-02-03T21:01:28.614-0700 I  COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.2
+2020-02-03T21:01:28.619-0700 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2020-02-03T21:01:28.621-0700 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2020-02-03T21:01:28.622-0700 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2020-02-03T21:01:28.630-0700 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 50b909cf-18dc-441a-871e-d9fd33be5f98 and options: { capped: true, size: 10485760 }
+2020-02-03T21:01:28.701-0700 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2020-02-03T21:01:28.702-0700 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2020-02-03T21:01:29.547-0700 W  FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'The specified object was not found on the computer.' for counter '\Processor(_Total)\% Idle Time'
+2020-02-03T21:01:29.548-0700 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'D:/Softwareinstallation/mongodb/data/diagnostic.data'
+2020-02-03T21:01:29.557-0700 I  SHARDING [LogicalSessionCacheRefresh] Marking collection config.system.sessions as collection version: <unsharded>
+2020-02-03T21:01:29.558-0700 I  NETWORK  [initandlisten] Listening on 127.0.0.1
+2020-02-03T21:01:29.559-0700 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2020-02-03T21:01:29.560-0700 I  STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with provided UUID: 03129668-b95c-40db-9de0-32743ca628ee and options: { uuid: UUID("03129668-b95c-40db-9de0-32743ca628ee") }
+2020-02-03T21:01:29.565-0700 I  NETWORK  [initandlisten] waiting for connections on port 27017
+2020-02-03T21:01:29.643-0700 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index _id_ on ns config.system.sessions
+2020-02-03T21:01:29.710-0700 I  INDEX    [LogicalSessionCacheRefresh] index build: starting on config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 } using method: Hybrid
+2020-02-03T21:01:29.711-0700 I  INDEX    [LogicalSessionCacheRefresh] build may temporarily use up to 500 megabytes of RAM
+2020-02-03T21:01:29.716-0700 I  INDEX    [LogicalSessionCacheRefresh] index build: collection scan done. scanned 0 total records in 0 seconds
+2020-02-03T21:01:29.719-0700 I  INDEX    [LogicalSessionCacheRefresh] index build: inserted 0 keys from external sorter into index in 0 seconds
+2020-02-03T21:01:29.743-0700 I  INDEX    [LogicalSessionCacheRefresh] index build: done building index lsidTTLIndex on ns config.system.sessions
+2020-02-03T21:01:29.759-0700 I  COMMAND  [LogicalSessionCacheRefresh] command config.system.sessions command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ ParallelBatchWriterMode: { acquireCount: { r: 2 } }, ReplicationStateTransition: { acquireCount: { w: 3 } }, Global: { acquireCount: { r: 1, w: 2 } }, Database: { acquireCount: { r: 1, w: 2, W: 1 } }, Collection: { acquireCount: { r: 4, w: 1, R: 1, W: 2 } }, Mutex: { acquireCount: { r: 3 } } } flowControl:{ acquireCount: 1 } storage:{} protocol:op_msg 199ms
+2020-02-03T21:01:30.002-0700 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2020-02-03T21:03:49.886-0700 I  NETWORK  [listener] connection accepted from 127.0.0.1:53936 #1 (1 connection now open)
+2020-02-03T21:03:49.894-0700 I  NETWORK  [conn1] received client metadata from 127.0.0.1:53936 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.2.1" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 17134)" } }
+2020-02-03T21:06:29.558-0700 I  SHARDING [LogicalSessionCacheReap] Marking collection config.transactions as collection version: <unsharded>
+2020-02-03T21:15:37.682-0700 I  STORAGE  [conn1] createCollection: firstdb.firstCol with generated UUID: 325da9d6-3415-4fce-978a-64580053036b and options: {}
+2020-02-03T21:15:37.768-0700 I  INDEX    [conn1] index build: done building index _id_ on ns firstdb.firstCol
+2020-02-03T21:18:24.706-0700 I  SHARDING [conn1] Marking collection firstdb.firstCol as collection version: <unsharded>
+
+_____________________
+D:\>cd D:\Softwareinstallation\mongodb\bin
+
+D:\Softwareinstallation\mongodb\bin>mongo.exe
+MongoDB shell version v4.2.1
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("4b7a8a83-e954-4db2-b65d-32f9e07abdd6") }
+MongoDB server version: 4.2.1
+Welcome to the MongoDB shell.
+For interactive help, type "help".
+For more comprehensive documentation, see
+        http://docs.mongodb.org/
+Questions? Try the support group
+        http://groups.google.com/group/mongodb-user
+Server has startup warnings:
+2020-02-03T21:01:28.492-0700 I  CONTROL  [initandlisten]
+2020-02-03T21:01:28.493-0700 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2020-02-03T21:01:28.496-0700 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2020-02-03T21:01:28.500-0700 I  CONTROL  [initandlisten]
+2020-02-03T21:01:28.501-0700 I  CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2020-02-03T21:01:28.502-0700 I  CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2020-02-03T21:01:28.504-0700 I  CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2020-02-03T21:01:28.512-0700 I  CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2020-02-03T21:01:28.513-0700 I  CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2020-02-03T21:01:28.514-0700 I  CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2020-02-03T21:01:28.516-0700 I  CONTROL  [initandlisten]
+MongoDB Enterprise > db.states()
+2020-02-03T21:06:57.211-0700 E  QUERY    [js] uncaught exception: TypeError: db.states is not a function :
+@(shell):1:1
+MongoDB Enterprise > db.stats()
+{
+        "db" : "test",
+        "collections" : 0,
+        "views" : 0,
+        "objects" : 0,
+        "avgObjSize" : 0,
+        "dataSize" : 0,
+        "storageSize" : 0,
+        "numExtents" : 0,
+        "indexes" : 0,
+        "indexSize" : 0,
+        "scaleFactor" : 1,
+        "fileSize" : 0,
+        "fsUsedSize" : 0,
+        "fsTotalSize" : 0,
+        "ok" : 1
+}
+MongoDB Enterprise > db.help()
+DB methods:
+        db.adminCommand(nameOrDocument) - switches to 'admin' db, and runs command [just calls db.runCommand(...)]
+        db.aggregate([pipeline], {options}) - performs a collectionless aggregation on this database; returns a cursor
+        db.auth(username, password)
+        db.cloneDatabase(fromhost) - will only function with MongoDB 4.0 and below
+        db.commandHelp(name) returns the help for the command
+        db.copyDatabase(fromdb, todb, fromhost) - will only function with MongoDB 4.0 and below
+        db.createCollection(name, {size: ..., capped: ..., max: ...})
+        db.createUser(userDocument)
+        db.createView(name, viewOn, [{$operator: {...}}, ...], {viewOptions})
+        db.currentOp() displays currently executing operations in the db
+        db.dropDatabase(writeConcern)
+        db.dropUser(username)
+        db.eval() - deprecated
+        db.fsyncLock() flush data to disk and lock server for backups
+        db.fsyncUnlock() unlocks server following a db.fsyncLock()
+        db.getCollection(cname) same as db['cname'] or db.cname
+        db.getCollectionInfos([filter]) - returns a list that contains the names and options of the db's collections
+        db.getCollectionNames()
+        db.getLastError() - just returns the err msg string
+        db.getLastErrorObj() - return full status object
+        db.getLogComponents()
+        db.getMongo() get the server connection object
+        db.getMongo().setSlaveOk() allow queries on a replication slave server
+        db.getName()
+        db.getProfilingLevel() - deprecated
+        db.getProfilingStatus() - returns if profiling is on and slow threshold
+        db.getReplicationInfo()
+        db.getSiblingDB(name) get the db at the same server as this one
+        db.getWriteConcern() - returns the write concern used for any operations on this db, inherited from server object if set
+        db.hostInfo() get details about the server's host
+        db.isMaster() check replica primary status
+        db.killOp(opid) kills the current operation in the db
+        db.listCommands() lists all the db commands
+        db.loadServerScripts() loads all the scripts in db.system.js
+        db.logout()
+        db.printCollectionStats()
+        db.printReplicationInfo()
+        db.printShardingStatus()
+        db.printSlaveReplicationInfo()
+        db.resetError()
+        db.runCommand(cmdObj) run a database command.  if cmdObj is a string, turns it into {cmdObj: 1}
+        db.serverStatus()
+        db.setLogLevel(level,<component>)
+        db.setProfilingLevel(level,slowms) 0=off 1=slow 2=all
+        db.setVerboseShell(flag) display extra information in shell output
+        db.setWriteConcern(<write concern doc>) - sets the write concern for writes to the db
+        db.shutdownServer()
+        db.stats()
+        db.unsetWriteConcern(<write concern doc>) - unsets the write concern for writes to the db
+        db.version() current version of the server
+        db.watch() - opens a change stream cursor for a database to report on all  changes to its non-system collections.
+MongoDB Enterprise > show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+MongoDB Enterprise > use firstdb
+switched to db firstdb
+MongoDB Enterprise > show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+MongoDB Enterprise > db.createCollection('firstCol')
+{ "ok" : 1 }
+MongoDB Enterprise > show dbs
+admin    0.000GB
+config   0.000GB
+firstdb  0.000GB
+local    0.000GB
+MongoDB Enterprise > show collections
+firstCol
+MongoDB Enterprise > db.firstCol.insert({"name":"Salary"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.insert({"name":"Salary"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.insert({"name":"Salary"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find
+function(query, fields, limit, skip, batchSize, options) {
+    var cursor = new DBQuery(this._mongo,
+                             this._db,
+                             this,
+                             this._fullName,
+                             this._massageObject(query),
+                             fields,
+                             limit,
+                             skip,
+                             batchSize,
+                             options || this.getQueryOptions());
+
+    {
+        const session = this.getDB().getSession();
+
+        const readPreference = session._getSessionAwareClient().getReadPreference(session);
+        if (readPreference !== null) {
+            cursor.readPref(readPreference.mode, readPreference.tags);
+        }
+
+        const readConcern = session._getSessionAwareClient().getReadConcern(session);
+        if (readConcern !== null) {
+            cursor.readConcern(readConcern.level);
+        }
+    }
+
+    return cursor;
+}
+MongoDB Enterprise > db.firstCol.find.limit(1)
+2020-02-03T21:25:14.912-0700 E  QUERY    [js] uncaught exception: TypeError: db.firstCol.find.limit is not a function :
+@(shell):1:1
+MongoDB Enterprise > db.firstCol.find()
+{ "_id" : ObjectId("5e38f09063be5be64bea441e"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c163be5be64bea441f"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c363be5be64bea4420"), "name" : "Salary" }
+MongoDB Enterprise > db.firstCol.find.limit({1})
+2020-02-03T21:25:37.696-0700 E  QUERY    [js] uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:25
+MongoDB Enterprise > db.firstCol.find({"name":"xyz"})
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lt<5000}})
+2020-02-03T21:31:02.703-0700 E  QUERY    [js] uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:31
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lt:5000}}).pretty()
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lt:5000}})
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gt:5000}})
+MongoDB Enterprise > db.firstCol.insert({"abc":"5000"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gt:5000}})
+MongoDB Enterprise > db.firstCol.insert({"Salary":"5000"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gt:5000}})
+MongoDB Enterprise > db.firstCol.insert({"Salary":"3000"})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lt:5000}})
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gt:5000}})
+MongoDB Enterprise > show firstCol
+2020-02-03T21:35:51.599-0700 E  QUERY    [js] uncaught exception: Error: don't know how to show [firstCol] :
+shellHelper.show@src/mongo/shell/utils.js:1139:11
+shellHelper@src/mongo/shell/utils.js:790:15
+@(shellhelp2):1:1
+MongoDB Enterprise > db.firstCol.insert({"Salary":3000})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lt:5000}})
+{ "_id" : ObjectId("5e38f4cd63be5be64bea4424"), "Salary" : 3000 }
+MongoDB Enterprise > db.firstCol.insert({"Salary":8000})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gt:5000}})
+{ "_id" : ObjectId("5e38f4eb63be5be64bea4425"), "Salary" : 8000 }
+MongoDB Enterprise > db.firstCol.find({"Salary":{$gte:5000}})
+{ "_id" : ObjectId("5e38f4eb63be5be64bea4425"), "Salary" : 8000 }
+MongoDB Enterprise > db.firstCol.find({"Salary":{$lte:5000}})
+{ "_id" : ObjectId("5e38f4cd63be5be64bea4424"), "Salary" : 3000 }
+MongoDB Enterprise > db.firstCol.find({"Salary":{$ne:5000}})
+{ "_id" : ObjectId("5e38f09063be5be64bea441e"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c163be5be64bea441f"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c363be5be64bea4420"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f41563be5be64bea4421"), "abc" : "5000" }
+{ "_id" : ObjectId("5e38f44463be5be64bea4422"), "Salary" : "5000" }
+{ "_id" : ObjectId("5e38f45963be5be64bea4423"), "Salary" : "3000" }
+{ "_id" : ObjectId("5e38f4cd63be5be64bea4424"), "Salary" : 3000 }
+{ "_id" : ObjectId("5e38f4eb63be5be64bea4425"), "Salary" : 8000 }
+MongoDB Enterprise > db.firstCol.save()
+2020-02-03T21:49:28.213-0700 E  QUERY    [js] uncaught exception: Error: can't save a null :
+DBCollection.prototype.save@src/mongo/shell/collection.js:567:15
+@(shell):1:1
+MongoDB Enterprise > db.firstCol.find().pretty()
+{ "_id" : ObjectId("5e38f09063be5be64bea441e"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c163be5be64bea441f"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f0c363be5be64bea4420"), "name" : "Salary" }
+{ "_id" : ObjectId("5e38f41563be5be64bea4421"), "abc" : "5000" }
+{ "_id" : ObjectId("5e38f44463be5be64bea4422"), "Salary" : "5000" }
+{ "_id" : ObjectId("5e38f45963be5be64bea4423"), "Salary" : "3000" }
+{ "_id" : ObjectId("5e38f4cd63be5be64bea4424"), "Salary" : 3000 }
+{ "_id" : ObjectId("5e38f4eb63be5be64bea4425"), "Salary" : 8000 }
+MongoDB Enterprise > db.firstCol.find().limit(1).skip(1)
+{ "_id" : ObjectId("5e38f0c163be5be64bea441f"), "name" : "Salary" }
+MongoDB Enterprise >
