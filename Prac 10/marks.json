@@ -1,0 +1,32 @@
+{
+	"_id": 1 ;
+	"name" : "Liza" ;
+	"subject1" : "ADBMS" ;
+	"marks1" : 60 ;
+	"subject2" : "AJ";
+	"marks2": 55;
+	"subject3":"PHP";
+	"marks3":59;
+};
+
+{
+	"_id": 2 ;
+	"name" : "Ekta" ;
+	"subject1" : "ADBMS" ;
+	"marks1" : 49 ;
+	"subject2" : "AJ";
+	"marks2": 50;
+	"subject3":"PHP";
+	"marks3":56;
+};
+
+{
+	"_id": 3 ;
+	"name" :"Krishna";
+	"subject1" :"ADBMS";
+	"marks1" :55;
+	"subject2" :"AJ";
+	"marks2":45;
+	"subject3":"PHP";
+	"marks3":46;
+};
